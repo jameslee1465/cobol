@@ -1,0 +1,3 @@
+  set "COB_LIBRARY_PATH=%MINGW_ROOT_PATH%lib\gnucobol%COB_LIBRARY_PATH%"
+  set "COB_COPY_DIR=%MINGW_ROOT_PATH%share\gnucobol\copy"
+  set "COB_CONFIG_DIR=%MINGW_ROOT_PATH%share\gnucobol\config"

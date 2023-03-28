@@ -1,0 +1,23 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. formattedpic.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  STARTNUM PIC 9(8)V99 VALUE 00001123.55.
+       01  NoZero PIC ZZZZZZZ9.99.
+       01  NOZEROPLUSC PIC ZZ,ZZZ,ZZ9.99.
+       01  Dollar PIC $$,$$$,$$9.99.
+       01  BDAY PIC 9(8) VALUE 19990316.
+       01  ADATE PIC 9999/99/99.
+       
+       PROCEDURE DIVISION.
+           MOVE STARTNUM TO NOZERO.
+           DISPLAY NOZERO.
+           MOVE STARTNUM TO NOZEROPLUSC.
+           DISPLAY NOZEROPLUSC.
+           MOVE STARTNUM TO DOLLAR.
+           DISPLAY DOLLAR.
+           MOVE BDAY to ADATE.
+           DISPLAY ADATE.
+       
+           STOP RUN.
+       
